@@ -18,18 +18,6 @@ const services = [
     ),
   },
   {
-    id: "gis",
-    title: "GIS & Remote Sensing",
-    desc: "Advanced spatial data management, custom mapping, and satellite imagery analysis.",
-    image: "/images/project-survey.jpg",
-    points: ["Spatial Analysis", "Custom Mapping", "Environmental Monitoring", "Drone Surveys"],
-    icon: (
-      <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3" />
-      </svg>
-    ),
-  },
-  {
     id: "geo-technical",
     title: "Geo-technical",
     desc: "Soil testing, foundation inspections, and construction monitoring for safe development.",
@@ -245,7 +233,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <span className="font-bold text-lg">View All Services</span>
-                <span className="text-white/70 text-sm mt-1">5 disciplines</span>
+                <span className="text-white/70 text-sm mt-1">4 disciplines</span>
               </Link>
             </AnimateIn>
           </div>

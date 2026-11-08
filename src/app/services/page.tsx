@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Land surveying, GIS & remote sensing, geo-technical investigations, physical planning and mining survey services across Botswana. Expert geomatics solutions since 2016.",
-  keywords: ["land surveying services", "GIS remote sensing Botswana", "geo-technical investigation", "mining survey services", "physical planning Botswana", "cadastral survey"],
+    "Land surveying, geo-technical investigations, physical planning and mining survey services across Botswana. Expert geomatics solutions since 2016.",
+  keywords: ["land surveying services", "geo-technical investigation", "mining survey services", "physical planning Botswana", "cadastral survey"],
   alternates: { canonical: "https://geo-scape.co.bw/services" },
   openGraph: {
     title: "Surveying & Geomatics Services | Geo-Scape Consultants",
@@ -33,22 +33,6 @@ const services = [
       "Underground utility surveys",
       "As-built surveys",
       "Engineering setting-out and 3D modelling",
-    ],
-  },
-  {
-    id: "gis",
-    title: "GIS & Remote Sensing",
-    intro:
-      "Our GIS team captures, manages, and analyses spatial data to help clients understand and act on location-based information. From custom mapping to satellite-based environmental monitoring, we turn raw geospatial data into decision-ready intelligence.",
-    image: "/images/project-survey.jpg",
-    imageAlt: "Drone survey equipment at mining site",
-    subServices: [
-      "Geospatial database design and management",
-      "Custom map production and cartography",
-      "Location and suitability analysis",
-      "Remote sensing and satellite image interpretation",
-      "Environmental monitoring and change detection",
-      "Drone photogrammetry and point-cloud processing",
     ],
   },
   {
