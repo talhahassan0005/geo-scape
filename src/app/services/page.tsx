@@ -142,8 +142,8 @@ export default function ServicesPage() {
                 i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
               }`}
             >
-              <div className="relative rounded-lg overflow-hidden aspect-[4/3] bg-[#F4F7FC]">
-                <Image src={s.image} alt={s.imageAlt} fill className="object-cover" />
+              <div className="relative rounded-lg overflow-hidden aspect-[4/3] bg-[#F4F7FC] skeleton">
+                <Image src={s.image} alt={s.imageAlt} fill className="object-cover" placeholder="blur" blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAAFCAAIAAoDASIAAiEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAHhAAAgIDAQEBAAAAAAAAAAAAAAECAxESITFB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMp2lzLJbWfFQ3nkbGVKMqWdxpgHJIOBk4ORkGDsP//Z" />
               </div>
               <div>
                 <span className="text-[0.72rem] font-semibold tracking-[0.14em] uppercase text-[#15B09A] block mb-3">

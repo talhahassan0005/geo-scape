@@ -133,12 +133,14 @@ export default function ProjectsPage() {
                 key={p.title}
                 className="border border-[#DCE8F2] rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all group bg-white"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#F4F7FC]">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#F4F7FC] skeleton">
                   <Image
                     src={p.img}
                     alt={p.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAAFCAAIAAoDASIAAiEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAHlAAAgIDAQEBAAAAAAAAAAAAAAECAxESITFBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC6tMLJbWfFQ3nkbGVKMqWdxpgHJIOBk4ORkGDsP//Z"
                   />
                 </div>
                 <div className="p-5">

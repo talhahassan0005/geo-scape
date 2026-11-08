@@ -2,6 +2,9 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
+const BLUR_PLACEHOLDER = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAAFCAAIAAoDASIAAiEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAHhAAAgIDAQEBAAAAAAAAAAAAAAECAxESITFB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMp2lzLJbWfFQ3nkbGVKMqWdxpgHJIOBk4ORkGDsP//Z";
+
+
 const slides = [
   { src: "/images/About slider/WhatsApp Image 2026-11-08 at 19.31.26.jpeg", alt: "Geo-Scape team on survey site" },
   { src: "/images/About slider/WhatsApp Image 2026-11-08 at 19.31.27.jpeg", alt: "Geo-Scape survey equipment in field" },
@@ -44,6 +47,8 @@ export default function AboutSlider() {
             loading={i === 0 ? "eager" : "lazy"}
             sizes="(max-width: 768px) 100vw, 100vw"
             quality={75}
+            placeholder="blur"
+            blurDataURL={BLUR_PLACEHOLDER}
           />
         </div>
       ))}
