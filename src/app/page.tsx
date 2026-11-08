@@ -169,8 +169,8 @@ export default function Home() {
             {services.slice(0, 3).map((s, i) => (
               <AnimateIn key={s.id} delay={staggerDelays[i]}>
                 <Link href={`/services#${s.id}`} className="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 block h-full">
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <Image src={s.image} alt={s.title} fill className="object-cover group-hover:scale-108 transition-transform duration-500" />
+                  <div className="relative aspect-[16/10] overflow-hidden skeleton">
+                    <Image src={s.image} alt={s.title} fill className="object-cover group-hover:scale-108 transition-transform duration-500" placeholder="blur" blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAAFCAAIAAoDASIAAiEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAHlAAAgIDAQEBAAAAAAAAAAAAAAECAxESITFBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC6tMLJbWfFQ3nkbGVKMqWdxpgHJIOBk4ORkGDsP//Z" />
                     <div className="absolute bottom-3 left-3 w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{ background: "linear-gradient(135deg, #1565C0, #15B09A)" }}>
                       {s.icon}
                     </div>
@@ -199,8 +199,8 @@ export default function Home() {
             {services.slice(3).map((s, i) => (
               <AnimateIn key={s.id} delay={staggerDelays[i]}>
                 <Link href={`/services#${s.id}`} className="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 block h-full">
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <Image src={s.image} alt={s.title} fill className="object-cover group-hover:scale-108 transition-transform duration-500" />
+                  <div className="relative aspect-[16/10] overflow-hidden skeleton">
+                    <Image src={s.image} alt={s.title} fill className="object-cover group-hover:scale-108 transition-transform duration-500" placeholder="blur" blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAAFCAAIAAoDASIAAiEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAHlAAAgIDAQEBAAAAAAAAAAAAAAECAxESITFBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC6tMLJbWfFQ3nkbGVKMqWdxpgHJIOBk4ORkGDsP//Z" />
                     <div className="absolute bottom-3 left-3 w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{ background: "linear-gradient(135deg, #1565C0, #15B09A)" }}>
                       {s.icon}
                     </div>
