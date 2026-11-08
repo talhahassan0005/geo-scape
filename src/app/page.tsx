@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import StatsStrip from "@/components/StatsStrip";
 import AnimateIn from "@/components/AnimateIn";
+import HeroSlider from "@/components/HeroSlider";
 
 const services = [
   {
@@ -112,16 +113,10 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-center overflow-hidden" style={{ marginTop: "-70px" }}>
-        <Image
-          src="/images/hero-site.jpg"
-          alt="Geo-Scape Consultants field team"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(7,27,55,0.88) 0%, rgba(11,55,80,0.75) 60%, rgba(21,176,154,0.35) 100%)" }} />
+        {/* Background image slider + overlay + dots */}
+        <HeroSlider />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-5 py-24 md:py-32">
+        <div className="relative max-w-7xl mx-auto px-5 py-24 md:py-32" style={{ zIndex: 10 }}>
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8 hero-badge float-anim">
             <span className="w-2 h-2 rounded-full bg-[#15B09A]" />
             <span className="text-white text-sm font-medium">Serving Botswana Since 2016</span>
