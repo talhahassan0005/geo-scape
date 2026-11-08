@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import AboutSlider from "@/components/AboutSlider";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -67,8 +68,8 @@ export default function AboutPage() {
     <>
       {/* Page Hero */}
       <section className="pt-32 pb-16 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #071E38 0%, #0D3B6E 60%, #0E5FA6 100%)" }}>
-        <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[#0D5FAA]/20 pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-5 relative">
+        <AboutSlider />
+        <div className="max-w-7xl mx-auto px-5 relative" style={{ zIndex: 10 }}>
           <div className="flex items-center gap-2 text-sm text-white/50 mb-5">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
             <span>/</span>
@@ -121,7 +122,7 @@ export default function AboutPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden aspect-[4/3]">
               <Image
-                src="/images/team-site.jpg"
+                src="/images/story%231.jpeg"
                 alt="Geo-Scape team on site with survey tripod and drone"
                 fill
                 className="object-cover"

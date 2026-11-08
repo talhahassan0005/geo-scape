@@ -40,8 +40,8 @@ const services = [
     title: "Geo-technical Investigation",
     intro:
       "Before any structure is built, the ground beneath it must be understood. Our geo-technical engineers carry out site inspections and laboratory testing to characterise soil and rock conditions, reducing construction risk and ensuring regulatory compliance.",
-    image: "/images/project-rebar.jpg",
-    imageAlt: "Foundation rebar inspection close-up",
+    image: "/images/digging-note.jpeg",
+    imageAlt: "Geo-technical site investigation and soil excavation",
     subServices: [
       "Foundation condition inspection",
       "Floor slab and retaining wall assessment",
@@ -72,8 +72,8 @@ const services = [
     title: "Mining Survey",
     intro:
       "Mining operations demand millimetre accuracy and strict regulatory compliance. Geo-Scape's mining survey team has extensive experience across Botswana's mineral extraction sector, delivering the spatial data mine operators need for safe, efficient, and compliant operations.",
-    image: "/images/team-equipment.jpg",
-    imageAlt: "Geo-Scape team preparing survey equipment at mine site",
+    image: "/images/mining survey.jpeg",
+    imageAlt: "Geo-Scape mining survey team with equipment",
     subServices: [
       "Surface mine plans and cross-sections",
       "Stockpile volume calculations (drone and traditional)",

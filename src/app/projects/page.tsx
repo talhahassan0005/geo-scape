@@ -53,7 +53,7 @@ const projects = [
     desc: "Control traverses, pick-up surveys, and 3D modelling for infrastructure planning at an active mineral extraction site.",
   },
   {
-    img: "/images/team-site.jpg",
+    img: "/images/land surveying.jpeg",
     title: "Land Subdivision — Phakalane",
     category: "Land Surveying",
     year: "2023",
