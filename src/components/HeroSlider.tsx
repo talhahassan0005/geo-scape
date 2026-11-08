@@ -54,7 +54,9 @@ export default function HeroSlider() {
             fill
             className="object-cover object-center"
             priority={i === 0}
-            sizes="100vw"
+            loading={i === 0 ? "eager" : "lazy"}
+            sizes="(max-width: 768px) 100vw, 100vw"
+            quality={75}
           />
         </div>
       ))}
