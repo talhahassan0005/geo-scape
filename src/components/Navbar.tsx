@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-5 flex items-center justify-between h-16 md:h-[70px]">
           {/* Logo — clipped to remove whitespace canvas */}
           <Link href="/" className="flex items-center shrink-0">
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm px-2 py-1">
+            <div className="bg-white rounded-2xl px-2 py-1">
               <div style={{ width: 130, height: 62, overflow: 'hidden', position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
