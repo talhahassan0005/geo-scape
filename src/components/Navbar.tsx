@@ -51,7 +51,7 @@ export default function Navbar() {
                 <img
                   src="/Logo.png"
                   alt="Geo-Scape Consultants"
-                  style={{ position: 'absolute', top: -5, left: -6, width: 480, maxWidth: 'none', height: 'auto' }}
+                  style={{ position: 'absolute', top: -14, left: -6, width: 480, maxWidth: 'none', height: 'auto' }}
                 />
               </div>
             </div>
