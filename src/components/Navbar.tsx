@@ -44,12 +44,12 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-5 flex items-center justify-between h-16 md:h-[70px]">
           {/* Logo — clipped to remove whitespace canvas */}
-          <Link href="/" className="flex items-center" style={{ flexShrink: 0 }}>
+          <Link href="/" className="flex items-center" style={{ width: 150, height: 60, overflow: 'hidden', position: 'relative', flexShrink: 0 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/Logo.png"
               alt="Geo-Scape Consultants"
-              style={{ width: 170, height: 'auto', mixBlendMode: 'multiply' }}
+              style={{ position: 'absolute', top: -4, left: -7, width: 560, maxWidth: 'none', height: 'auto', mixBlendMode: 'multiply' }}
             />
           </Link>
 
