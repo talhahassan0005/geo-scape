@@ -267,7 +267,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p, i) => (
               <AnimateIn key={p.title} delay={staggerDelays[i % 6]}>
-                <div className="card-hover group relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#0B1B2E] skeleton">
+                <Link href="/projects" className="card-hover group relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#0B1B2E] skeleton block cursor-pointer">
                   <Image src={p.img} alt={p.alt} fill className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" placeholder="blur" blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAAFCAAIAAoDASIAAiEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAHlAAAgIDAQEBAAAAAAAAAAAAAAECAxESITFBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC6tMLJbWfFQ3nkbGVKMqWdxpgHJIOBk4ORkGDsP//Z" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B2E]/85 via-[#0B1B2E]/10 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
@@ -276,7 +276,7 @@ export default function Home() {
                     </span>
                     <h3 className="text-white font-bold text-base mt-1">{p.title}</h3>
                   </div>
-                </div>
+                </Link>
               </AnimateIn>
             ))}
           </div>
